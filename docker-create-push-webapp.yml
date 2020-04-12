@@ -4,16 +4,16 @@
 
   tasks:
   - name: building docker image using war file
-    command: docker build -t docker-webapp-image:latest .
+    command: docker build -t docker-webapp-image-casestudy:latest .
     args:
       chdir: /opt/docker
 
   - name: Create tag to image
-    command: docker tag docker-webapp-image samanmirbaha/docker-webapp-image
+    command: docker tag docker-webapp-image-casestudy samanmirbaha/docker-webapp-image-casestudy
 
   - name: Push image on to dockerhub
-    command: docker push samanmirbaha/docker-webapp-image
+    command: docker push samanmirbaha/docker-webapp-image-casestudy
 
   - name: Remove docker images from ansible server
-    command: docker rmi docker-webapp-image:latest samanmirbaha/docker-webapp-image
+    command: docker rmi docker-webapp-image-casestudy:latest samanmirbaha/docker-webapp-image-casestudy
     ignore_errors: yes
