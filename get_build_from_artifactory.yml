@@ -6,6 +6,6 @@
     get_url:
       url: "https://artifactorydevopsbootcamp.jfrog.io/artifactory/libs-release-local/WEBPOC/JavaWebApp/1.0/JavaWebApp-1.0.war"
       url_username: 'deploy'
-      url_password: 'devopsbootcamp'
+      url_password: 'password'
       dest: '/opt/docker'
   
